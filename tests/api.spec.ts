@@ -1,7 +1,9 @@
-import {test, expect} from '@playwright/test'
-
 // Playwright API documentation 
 // https://playwright.dev/docs/api-testing
+
+import {test, expect} from '@playwright/test'
+
+
 const baseUrl = 'https://jsonplaceholder.typicode.com'
 
 test('should do something', async({request})=>{
