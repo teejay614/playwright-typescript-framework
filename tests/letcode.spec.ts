@@ -18,12 +18,9 @@ test('can send keys', async ({ page }) => {
     await joinInput.fill(`${currentInputValue} appending some text and then tabbing out!`);
     await page.keyboard.press('Tab');
     await getMeInput.getAttribute('value');
+    //Expect a textbox to have a certain value
     //true
     expect(await getMeInput.getAttribute('value')).toBe('ortonikc');
     //false 
     //expect(await getMeInput.getAttribute('value')).toBe('hey!');
-
-  return;
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
 });
